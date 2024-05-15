@@ -1,6 +1,7 @@
 :root{
     --black: #000000;
     --white: #ffffff;
+    --text-dark: #1d1d1f
     --title-color: #f5f5f7;
     --subtitle-color: #6e6e73;
     --link-color: #2997ff
@@ -52,28 +53,6 @@ main section img{
     height: auto;
 }
 
-main main-section h1{
-    color: var(--title-color);
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 4rem;
-    letter-spacing: -0.28px;
-}
-
-main main-section h2{
-    color: var(--subtitle-color);
-    font-size: 1.5rem;
-    font-weight: normal;
-    line-height: 2rem;
-    letter-spacing: 0.11px;
-    margin-bottom: 1rem;
-}
-
-
-main section sub{
-    font-size: 0.9rem;
-}
-
 main section a{
     color: var(--link-color);
     font-size: 1.2rem;
@@ -83,11 +62,35 @@ main section a{
 }
 
 main section a:hover{
-    text-decoration: underline;
+     text-decoration: underline;
+}
+
+main .main-section h1{
+    color: var(--title-color);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .main-section h2{
+    color: var(--subtitle-color);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
 }
 
 
-main section .text-wrapper{
+main .main-section sub{
+    font-size: 0.9rem;
+}
+
+
+
+
+main .main-section .text-wrapper{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -136,4 +139,38 @@ main .spirited-section span{
     line-height: 1.5rem;
     display: block;
     letter-spacing: 0.23px;
+}
+
+main .iphone-section h2{
+    color: var(--text-dark);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .iphone-section p{
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+
+main .iphone-section .link-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+main .iphone-section .text-wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
 }
